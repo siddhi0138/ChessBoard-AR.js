@@ -32,7 +32,7 @@
       gesture-detector
     >
       <a-assets>
-        <a-asset-item id="car" src="Chess Scene.glb"></a-asset-item>
+        <a-asset-item id="chessBoard" src="Chess Scene.glb"></a-asset-item>
       </a-assets>
       <a-marker
         id="animated-marker"
@@ -43,7 +43,7 @@
         cursor="fuse: false; rayOrigin: mouse;"
         smooth="true"
       >
-        <a-entity gltf-model="#car" scale="1 1 1" <-- Adjusted scale -->
+        <a-entity gltf-model="#chessBoard" scale="0.2 0.2 0.2" <-- Adjusted scale -->
           position="0 0 -10"
           <!-- Moved back -->
           class="clickable" gesture-handler="minScale: 0.25; maxScale: 10"
